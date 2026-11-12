@@ -10,9 +10,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.text({ limit: "1mb" }));
 
-const DISCORD_CLIENT_ID = "COLOQUE_SEU_CLIENT_ID_AQUI";
-const DISCORD_CLIENT_SECRET = "COLOQUE_SEU_CLIENT_SECRET_AQUI";
-const DISCORD_REDIRECT_URI = "https://SEU-LINK-DO-RENDER.onrender.com/auth/discord/callback";
+const DISCORD_CLIENT_ID = "1570447835223162940";
+const DISCORD_CLIENT_SECRET = "O_xRp-_Z8aoiaN2d6tC2ur4A7A-iu8ay";
+const DISCORD_REDIRECT_URI = "https://finder-slots.onrender.com/auth/discord/callback";
 
 let slotsDatabase = {};
 let activeWebSocketClients = {};
