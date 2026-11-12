@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.text({ limit: "1mb" }));
 
 const DISCORD_CLIENT_ID = "1570447835223162940";
-const DISCORD_CLIENT_SECRET = "6baOr3NMlwsCCX3hO3_yEb7uH8x9sW6C";
+const DISCORD_CLIENT_SECRET = "6ba0r3NMlwsCCX3h03_yEb7uH8x9sW6C";
 const DISCORD_REDIRECT_URI = "https://finder-slots.onrender.com/auth/discord/callback";
 
 let slotsDatabase = {};
@@ -43,6 +43,7 @@ app.get("/auth/discord/callback", async (req, res) => {
             user: { id: user.id, username: user.username, avatar: `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` }
         });
     } catch (error) {
+        console.log("ERRO DISCORD:", error.response?.data || error.message);
         res.status(500).send("Erro ao autenticar com Discord.");
     }
 });
