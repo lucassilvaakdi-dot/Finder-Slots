@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.text({ limit: "1mb" }));
 
 const DISCORD_CLIENT_ID = "1570447835223162940";
-const DISCORD_CLIENT_SECRET = "O_xRp-_Z8aoiaN2d6tC2ur4A7A-iu8ay";
+const DISCORD_CLIENT_SECRET = "6baOr3NMlwsCCX3hO3_yEb7uH8x9sW6C";
 const DISCORD_REDIRECT_URI = "https://finder-slots.onrender.com/auth/discord/callback";
 
 let slotsDatabase = {};
